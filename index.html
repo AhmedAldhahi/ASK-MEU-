@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ASK-MEU | AI Q&A Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask-MEU</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>ASK-MEU Admin Panel</h1>
-    <p>🚀 Project structure initialized. You're ready to build!</p>
-    <button id="checkStatus">Check System Status</button>
-    <div id="statusMsg"></div>
-  </div>
+  <header>
+    <h1>Welcome to Ask-MEU</h1>
+    <p>Your Campus AI Assistant</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Ask Anything About MEU</h2>
+      <p>Need help finding a department, submitting a request, or getting academic info? Just ask!</p>
+      <input type="text" id="questionInput" placeholder="Type your question here..." />
+      <button onclick="askQuestion()">Ask</button>
+      <p id="response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ask-MEU | Middle East University</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
