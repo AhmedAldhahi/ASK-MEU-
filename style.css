@@ -56,3 +56,26 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.download-section {
+  margin-top: 20px;
+}
+
+#downloadBtn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#downloadBtn:hover {
+  background-color: #45a049;
+}
+
+#exportFormat {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

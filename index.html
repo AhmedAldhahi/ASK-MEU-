@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ask-MEU</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Welcome to Ask-MEU</h1>
-    <p>Your Campus AI Assistant</p>
-  </header>
-
-  <main>
-    <section class="intro">
-      <h2>Ask Anything About MEU</h2>
-      <p>Need help finding a department, submitting a request, or getting academic info? Just ask!</p>
-      <input type="text" id="questionInput" placeholder="Type your question here..." />
-      <button onclick="askQuestion()">Ask</button>
-      <p id="response"></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Ask-MEU | Middle East University</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+ <div class="download-section">
+  <select id="exportFormat">
+    <option value="txt">Download as .txt</option>
+    <!-- You can add more formats later like PDF -->
+  </select>
+  <button id="downloadBtn">Download Answer</button>
+</div>
