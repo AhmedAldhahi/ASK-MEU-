@@ -44,3 +44,10 @@ button {
     font-size: large;
     padding: 20px;
 }
+
+h2 {
+    background-color: #f7e9e9;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
