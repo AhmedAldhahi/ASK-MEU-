@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: rgb(168, 43, 43);
+    text-decoration: none;
+    display: block;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+button {
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-size: large;
+    padding: 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="#" onclick="showSection('questions')">Flagged Questions</a></li>
+            <li><a href="#" onclick="showSection('settings')">System Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <section id="questions">
+            <h2>Flagged Questions</h2>
+            <ul id="questionsList"></ul>
+        </section>
+
+        <section id="settings" style="display: none;">
+            <h2>System Settings</h2>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
