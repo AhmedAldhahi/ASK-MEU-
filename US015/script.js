@@ -1,4 +1,5 @@
 function rephraseAnswer() {
+    let message = " Answer Tabel";
     let inputText = document.getElementById("inputText").value;
 
     if (!inputText.trim()) {
