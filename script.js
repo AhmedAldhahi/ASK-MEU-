@@ -139,5 +139,50 @@ function goBack() {
   // Simulate going back to the Ask screen
   window.location.href = "ask.html";
 }
+const promptBox = document.getElementById("customPrompt");
+const saveMsg = document.getElementById("saveMsg");
+
+async function getCurrentUser() {
+  const { data } = await supabase.auth.getSession();
+  return data.session?.user ?? null;
+}
+
+async function loadPromptSetting() {
+  const user = await getCurrentUser();
+  if (!user) return;
+
+  const { data, error } = await supabase
+    .from("prompt_settings")
+    .select("custom_prompt")
+    .eq("user_id", user.id)
+    .single();
+
+  if (data) {
+    promptBox.value = data.custom_prompt;
+  }
+}
+
+async function savePrompt() {
+  const user = await getCurrentUser();
+  if (!user) return;
+
+  const prompt = promptBox.value.trim();
+
+  const { error } = await supabase
+    .from("prompt_settings")
+    .upsert({
+      user_id: user.id,
+      custom_prompt: prompt,
+    });
+
+  if (!error) {
+    saveMsg.textContent = "✅ Saved successfully!";
+  } else {
+    saveMsg.textContent = "❌ Failed to save prompt.";
+    console.error(error);
+  }
+}
+
+loadPromptSetting();
 
 checkSession();
