@@ -14,6 +14,20 @@
     <div id="statusMsg"></div>
   </div>
 
+  <div id="authForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button onclick="signIn()">Sign In</button>
+      <p id="authMsg"></p>
+    </div>
+
+    <div id="welcome" class="hidden">
+      <h2>Welcome back! 👋</h2>
+      <p id="userEmail"></p>
+      <button onclick="signOut()">Sign Out</button>
+    </div>
+  </div>
+
   <form id="questionForm">
       <label for="question">Your Question:</label>
       <textarea id="question" placeholder="Type your question here..." required></textarea>
