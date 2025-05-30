@@ -83,5 +83,29 @@ function showLogin() {
   authForm.classList.remove('hidden');
   welcome.classList.add('hidden');
 }
+// Simulated data — replace with real API response or Supabase fetch
+const userQuestion = "How can I improve my time management skills?";
+const followUpAnswers = [
+  "Start by breaking large tasks into smaller steps using the Pomodoro technique.",
+  "Use a planner app to organize tasks by priority and deadlines.",
+  "Review your progress weekly and adjust your schedule to avoid burnout.",
+];
+
+// Display question
+document.getElementById("userQuestion").textContent = userQuestion;
+
+// Display all follow-up answers
+const answersList = document.getElementById("answersList");
+followUpAnswers.forEach((answer, index) => {
+  const div = document.createElement("div");
+  div.className = "answer-item";
+  div.innerHTML = `<strong>Answer ${index + 1}:</strong><p>${answer}</p>`;
+  answersList.appendChild(div);
+});
+
+function goBack() {
+  // Simulate going back to the Ask screen
+  window.location.href = "ask.html";
+}
 
 checkSession();
