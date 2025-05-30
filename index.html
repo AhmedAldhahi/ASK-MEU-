@@ -14,6 +14,24 @@
     <div id="statusMsg"></div>
   </div>
 
+  <form id="questionForm">
+      <label for="question">Your Question:</label>
+      <textarea id="question" placeholder="Type your question here..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="followUpSection" class="hidden">
+      <h2>✅ Thank you for your question!</h2>
+      <p>We’ve received it. You’ll see follow-up replies below:</p>
+      <div class="message-thread">
+        <p><strong>You:</strong> <span id="userQuestion"></span></p>
+        <p class="pending-reply">📨 Awaiting MEU response...</p>
+      </div>
+      <div class="actions">
+        <button onclick="askAnother()">Ask Another</button>
+      </div>
+    </div>
+
   <script src="script.js"></script>
 </body>
 </html>

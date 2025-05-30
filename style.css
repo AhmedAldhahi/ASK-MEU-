@@ -16,6 +16,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
 button {
   padding: 10px 20px;
   margin-top: 20px;
@@ -34,4 +45,22 @@ button:hover {
   margin-top: 20px;
   color: green;
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.message-thread {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.pending-reply {
+  color: gray;
+  font-style: italic;
+  margin-top: 10px;
 }
