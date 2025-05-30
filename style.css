@@ -171,4 +171,23 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}#limitNotice {
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: bold;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+#saveMsg {
+  margin-top: 10px;
+  color: green;
 }
