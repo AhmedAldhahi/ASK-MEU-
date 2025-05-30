@@ -34,6 +34,17 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
 button {
   padding: 10px 20px;
   margin-top: 10px;
@@ -48,6 +59,7 @@ button:hover {
   background-color: #003060;
 }
 
+
 footer {
   background-color: #222;
   color: white;
@@ -55,7 +67,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
+
 .download-section {
   margin-top: 20px;
 }
@@ -79,3 +91,156 @@ footer {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+=======
+
+#statusMsg {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.message-thread {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.pending-reply {
+  color: gray;
+  font-style: italic;
+  margin-top: 10px;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#authMsg {
+  margin-top: 15px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+  color: #333;
+}
+
+.site-header {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.site-header .nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.site-header .nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+  margin-top: 40px;
+}
+.question-box, .answers-box {
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.answers-box h2 {
+  margin-bottom: 15px;
+}
+
+.answer-item {
+  background: #e9f2ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}#limitNotice {
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: bold;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+#saveMsg {
+  margin-top: 10px;
+  color: green;
+}
+
