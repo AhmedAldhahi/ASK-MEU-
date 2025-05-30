@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevenueCat Subscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h2>Manage Your Subscription</h2>
+    <div id="subscription-options">
+        <p>Select a plan:</p>
+        <button onclick="purchaseSubscription('monthly')">Subscribe Monthly</button>
+        <button onclick="purchaseSubscription('yearly')">Subscribe Yearly</button>
+    </div>
+
+    <div id="status"></div>
+
+    <button onclick="checkSubscriptionStatus()">Check Subscription Status</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
