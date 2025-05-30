@@ -95,3 +95,80 @@ button:hover {
 .hidden {
   display: none;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+  color: #333;
+}
+
+.site-header {
+  background: #007bff;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.site-header .nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.site-header .nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+  margin-top: 40px;
+}
+.question-box, .answers-box {
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.answers-box h2 {
+  margin-bottom: 15px;
+}
+
+.answer-item {
+  background: #e9f2ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
