@@ -2,6 +2,38 @@ document.getElementById('checkStatus').addEventListener('click', () => {
   const statusMsg = document.getElementById('statusMsg');
   statusMsg.textContent = '✅ ASK-MEU is initialized and ready for development!';
 });
+const DAILY_LIMIT = 4; // Optional fallback
+
+async function fetchRemainingLimit() {
+  const user = await getUser();
+  if (!user) return;
+
+  const today = new Date().toISOString().split("T")[0];
+
+  const { data, error } = await supabase
+    .from("question_limits")
+    .select("used_today, limit")
+    .eq("user_id", user.id)
+    .eq("date", today)
+    .single();
+
+  const used = data?.used_today ?? 0;
+  const limit = data?.limit ?? DAILY_LIMIT;
+  const remaining = Math.max(0, limit - used);
+
+  document.getElementById("limitNotice").textContent =
+    `You have ${remaining} question${remaining !== 1 ? "s" : ""} left today.`;
+}
+
+async function getUser() {
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+  return session?.user ?? null;
+}
+
+// Call on page load
+fetchRemainingLimit();
 
 
 const form = document.getElementById("questionForm");
